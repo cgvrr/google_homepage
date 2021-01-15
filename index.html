@@ -6,34 +6,47 @@
     </head>
 
 <body>
-    <header>
     <style>
-        ul {
+        .header {
             list-style-type: none;
             margin: 0;
             padding: 0;
-        }
-
-        li{
             float: right;
-
+        }
+        
+        .footer {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            bottom: 0; 
+            background-color:#f2f2f2;
         }
 
-        li a {
-            display: block
-            padding: 8px
+        .footer a {
+            float: left; 
+            display: block; 
+            text-align: center;
+            padding: 14px 16px;
+            size: 10px;
+            color: #70757a;
+        }
+
+        .footer-right {
+            float: right;
         }
 
 
+        li {
+            display: inline;
+        }
+
+        
     </style>
     <ul>
-    
+    <div class= "header">
         <li><a href="#">Gmail</a></li>
 	    <li><a href="#">Images</a></li>
 	</ul>
-
-        </header>
-
     <div>
         <center>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
@@ -46,17 +59,17 @@
         </center>
     </div>
 
-<footer>
-
-    <ul>
-        <li><a href="#">Advertising</a></li>
-	    <li><a href="#">Business</a></li>
-		<li><a href="#">Advertising</a></li>
-        <li><a href="#">How Search Works</a></li>
-        <li><a href="#">Privacy</a></li>
-		<li><a href="#">Terms</a></li>
-		<li><a href="#">Settings</a></li>
-	</footer>
+<div class= "footer">
+        <a href="#">Advertising</a>
+	    <a href="#">Business</a>
+		<a href="#">Advertising</a>
+        <a href="#">How Search Works</a>
+ <div class="footer-right">
+        <a href="#">Privacy</a>
+		<a href="#">Terms</a>
+		<a href="#">Settings</a>
+    </footer>
+    </body></div></div>
 
 
     </body>
