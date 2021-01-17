@@ -2,6 +2,7 @@
 <html>
     <head>
 <title> Google</title>
+
 <link rel="stylesheet" type="text/css" href="google.css">
     </head>
 
@@ -27,25 +28,58 @@
         }
 
         #main {
+            margin:0 auto;
             text-align: center;
             margin-top: 14%;
             padding-bottom: 25%;
 
         }
 
+        .grid {
+            height:23px;
+            position:relative;
+            padding-right: 10px;
+            top: 5px;
+            
+            
+        }
+
+        .signbutton {
+            background-color: #4885ed;
+            color: #fff;
+            border:none;
+            border-radius:3px;
+            padding:7px 10px;
+            position:relative;
+            bottom: 0px;
+            font-weight:bold;
+        }
+
         #search-bar {
             width: 40%;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            padding-bottom: 25px;
+            height: 40px;
+            border:none;
             border-radius: 25px;
             border: 1px solid #e2e2e2; 
+            font-size: 16px;
             outline: none;
         }
         #search-bar:hover {
-            box-shadow: 0 1px 6px rgba(32,33,36,.28)
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
 
         }
+
+        #search-bar:focus-within{
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            outline:none;
+        }
+
+        .google-mic {
+            height:20px;
+            position: relative;
+            top: 6px;
+            right:48px;
+}
         .button {
             color: #3c4043;
             font-size: 13px;
@@ -111,13 +145,16 @@
     
         <div id="header" class="abs top">
         <a href="#" class="text-color">Gmail</a>
-	    <a href="#" class="text-color">Images</a>
+        <a href="#" class="text-color">Images</a>
+        <a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps">
+        <button class="signbutton" type="button">Sign in</button></a>
 	
 </div>
         <div id= "main">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <form>
             <input type="text" id= "search-bar">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" class="google-mic" alt="microphone"></a>
             <br>
             <input type="button" class="button" value= "Google Search"> </button>
             <input type="button" class="button" value=  "I'm Feeling Lucky"> </button>
