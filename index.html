@@ -7,25 +7,63 @@
     </head>
 
 <body>
-    
-    
+
     <style>
+
+* {
+        margin: 0;
+        padding: 0;
+    }
         body {
             font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;   
         }
 
-        .abs{
-            position: absolute;
+        ul {
+            list-style: none;
+            padding: 10px;
+
         }
 
         #header {
             top: 0;
             right: 0;
         }
-        .top {
-            padding-top: 15px;
-            margin-right: 15px;
+ /*navigation bar section*/
+
+        .navtop {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 10px;
         }
+
+        .nav-list {
+            display: flex;
+            margin: 0.5rem;
+            
+        }
+
+        .navbottom {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            height: 65px;
+            width: 100%;
+            background-color:#f2f2f2;
+        }
+
+        .navbottom li {
+            text-align: center;
+        }
+
+        /*main webpage*/
 
         #main {
             margin:0 auto;
@@ -37,10 +75,7 @@
 
         .grid {
             height:23px;
-            position:relative;
-            padding-right: 10px;
-            top: 5px;
-            
+            margin-right: 5px;
             
         }
 
@@ -50,7 +85,6 @@
             border:none;
             border-radius:3px;
             padding:7px 10px;
-            position:relative;
             bottom: 0px;
             font-weight:bold;
         }
@@ -104,30 +138,10 @@
         
         }
 
-        #footer {
-            height: 20px;
-            width: 100%;
-            bottom: 0; 
-            left: 0;
-            background-color:#f2f2f2;
-            z-index: 0;
-        }
-
-        .footer-label {
-            float: left; 
-            display: block; 
-            padding: 14px 16px;
-            size: 10px;
-        
-        }
-
-        .footer-right {
-            float: right;
-            margin-right: 30px;
-        }
 
         .text-color {
             color: #70757a;
+            
         }
 
         a {
@@ -142,14 +156,18 @@
         }
 
     </style>
-    
-        <div id="header" class="abs top">
-        <a href="#" class="text-color">Gmail</a>
-        <a href="#" class="text-color">Images</a>
-        <a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps">
-        <button class="signbutton" type="button">Sign in</button></a>
-	
+    <!--Top Navbar section-->
+        <nav id="navbar" class="navtop">
+            <ul class= "nav-list">
+                <li><a href="#" class="text-color">Gmail</a></li>
+                <li><a href="#" class="text-color">Images</a></li>
+                <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></li>
+                <li><button class="signbutton" type="button">Sign in</button></a></li>
+        </ul>
+	</nav>
 </div>
+
+    <!--Google main webpage-->
         <div id= "main">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <form>
@@ -166,18 +184,26 @@
         </form>
         
     </div>
+    <!--Bottom Navbar section-->
+    <footer id="footer">
+<nav id= "navbar" class= "navbottom">
+    
+    <ul class="nav-list">
+        <li><a href="#" class="text-color">Advertising</a></li>
+        <li><a href="#" class="text-color">Business</a></li>
+        <li><a href="#" class="text-color">Advertising</a></li>
+        <li><a href="#" class="text-color"> How Search Works</a></li>
+    </ul>
+    <ul class="nav-list">
 
-<div id= "footer" class= "abs footer-label">
-        <a href="#" class="text-color">Advertising</a>
-	    <a href="#" class="text-color">Business</a>
-		<a href="#" class="text-color">Advertising</a>
-        <a href="#" class="text-color"> How Search Works</a>
- <div class="footer-right">
-        <a href="#" class="text-color">Privacy</a>
-		<a href="#" class="text-color">Terms</a>
-		<a href="#" class="text-color">Settings</a>
+        <li class="push">  <a href="#" class="text-color">Privacy</a></li>
+        <a href="#" class="text-color">Terms</a></li>
+       <a href="#" class="text-color">Settings</a></li>
+    </ul>
     </footer>
-    </body></div></div>
+    </nav>  
+    </body></di/div>
+
 
 
     </body>
