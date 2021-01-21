@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        overflow: hidden;   
+    }
+
+    ul {
+        list-style: none;
+        padding: 10px;
+
+    }
+
+    #header {
+        top: 0;
+        right: 0;
+    }
+/*navigation bar section*/
+
+    .navtop {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-list {
+        display: flex;
+        margin: 0.5rem;
+        
+    }
+
+    .navbottom {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 100%;
+        background-color:#f2f2f2;
+    }
+
+    .navbottom li {
+        text-align: center;
+    }  
+
+    /*main webpage*/
+
+    #main {
+        margin:0 auto;
+        text-align: center;
+        margin-top: 14%;
+        padding-bottom: 25%;
+
+    }
+
+    .grid {
+        height:23px;
+        margin-right: 5px;
+        
+    }
+
+    .signbutton {
+        background-color: #4885ed;
+        font-size: 14px;
+        color: #fff;
+        border-radius:3px;
+        padding:7px;
+        bottom: 0px;
+        margin-left: 10px;
+        font-weight:800px;
+    }
+
+    #search-bar {
+        width: 40%;
+        height: 40px;
+        border:none;
+        border-radius: 25px;
+        border: 1px solid #e2e2e2; 
+        font-size: 16px;
+        outline: none;
+    }
+    #search-bar:hover {
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+
+    }
+
+    #search-bar:focus-within{
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+        outline:none;
+    }
+
+    .google-mic {
+        height:20px;
+        position: relative;
+        top: 6px;
+        right:48px;
+}
+    .button {
+        color: #3c4043;
+        font-size: 13px;
+        margin: 11px 3px;
+        padding: 14px;
+        border-radius: 4px;
+        border: 1px;
+    }
+    .button:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        background-color: #f8f9fa;
+        color: #202124;
+        
+    }
+
+    #language {
+        text-align: center;
+        font-size: small;
+        margin-top: 15px;
+        margin-bottom: 24px;
+
+    }
+
+    .text-color {
+        color: #70757a;
+        
+    }
+
+    a {
+        
+        text-decoration: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
