@@ -1,4 +1,5 @@
 This is the 'The Odin Project' 1st project: To build a Google Homepage. 
+<br>
 And also my first try at a webpage project.
 
 Will update this from time to time when I learn something new about html & css.
